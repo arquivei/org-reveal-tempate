@@ -1,0 +1,65 @@
+:REVEAL_PROPERTIES:
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_THEME: white
+#+REVEAL_EXTRA_CSS: presentation.css
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./img/arquivei_logo.png
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 50px
+#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: top left
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND: ./img/arquivei_logo.png
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_SIZE: 50px
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_POSITION: top left
+#+REVEAL_TOC_SLIDE_TITLE: Conteúdo
+#+REVEAL_TOC_SLIDE_BACKGROUND: ./img/arquivei_logo.png
+#+REVEAL_TOC_SLIDE_BACKGROUND_SIZE: 50px
+#+REVEAL_TOC_SLIDE_BACKGROUND_POSITION: top left
+#+OPTIONS: toc:1 timestamp:nil num:nil
+:END:
+
+#+TITLE: Org Revel Template
+#+AUTHOR: <Seu nome aqui>
+#+EXPORT_FILE_NAME: public/index.html
+
+* Introdução
+** Sub item
+Apenas um parágrafo.
+** Outro subitem
+Com dois parágrafos.
+Aqui vai o segundo.
+* Detalhes
+** É possível ter bullets
+- bullet 1
+- bullet 2
+- bullet 3
+** Ou números
+1) Número 1
+2) Número 2
+3) Número 3
+** Duas colunas
+#+REVEAL_HTML: <div class="column" style="float:left; width: 50%">
+#+ATTR_HTML: :width 45% :align center
+Para usar 2 colunas é preciso alterar o HTML diretamente
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 50%">
+- Mas funciona
+- ...
+#+REVEAL_HTML: </div>
+** Speaker notes
+#+BEGIN_NOTES
+Essas notas não aparecem nos slides normais.
+#+END_NOTES
+É possível ter uma tela separada para o apresentador usando ~s~ que mostra o slide atual, próximo e as notas.
+* Lições aprendidas
+#+ATTR_REVEAL: :frag (appear)
+- É possível mostrar
+- Apenas uma linha
+- por vez
+* Para aprender mais
+- [[https://orgmode.org/][Org mode for Emacs]]
+- [[https://gitlab.com/oer/org-re-reveal][org-re-reveal]]
+- [[https://revealjs.com/][The HTML presentation framework | reveal.js]]
+* Obrigado
+* Estamos contratando
+#+ATTR_HTML: :align center
+[[./img/estamos_contratando.png]]
+https://arquivei.com.br/vagas

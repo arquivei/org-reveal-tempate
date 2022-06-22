@@ -1,0 +1,40 @@
+* Apresentação: Migrando 1 Bilhão de Documentos
+
+A apresentação foi feita usado [[https://orgmode.org/][org-mode]] e exportada para uma apresentação [[https://revealjs.com/][reveal.js]] através do plugin [[https://gitlab.com/oer/org-re-reveal][org-re-reveal]].
+
+** Pré-requisitos
+
+Já existe um container docker com tudo instalado. Para gerar o HTML da apresentação basta ter na máquina:
+
+- make
+- docker
+
+Para edição basta instalar suporte a ~org~ no seu editor favorito.
+
+Recomendo [[https://github.com/doomemacs/doomemacs][doom-emacs]].
+
+** Como gerar a apresentação
+
+#+begin_src shell
+make all
+#+end_src
+
+Se quiser ter mas controle, pode entrar no container que gera a apresentação usando
+
+#+begin_src shell
+make edit
+#+end_src
+
+Para gerar a apresentação você pode usar a seguinte sequencia ~space m e v v~.
+
+** Arquitetura
+
+Os slides são definidos em ~presentation.org~.
+
+As imagens são salvas em ~img/~.
+
+Ajustes finos no CSS, como cores, são feitos pelo arquivo ~presentation.css~.
+
+** Roadmap
+
+- Geração automática e publicação do gitlab pages.
